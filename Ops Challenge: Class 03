@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Script:                       Ops 301 Ops Challenge 03
+# Author:                       MICHAEL ROUSON
+# Date of latest revision:      08/31/2022
+# Purpose:                      Viewing file permissions of everything in a directory.
+
+
+echo "Please insert path here"
+read path
+echo "Insert file permissions"
+read permissions
+find $path -type file -exec chmod $permissions {} \;
+cdmod $filename
+ls -l 

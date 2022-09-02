@@ -1,0 +1,34 @@
+echo "------Meanu Options ------"
+echo "1. Print 'Hello World"
+echo "Enter a number"
+read z
+
+if [ $z -eq 1]; then
+       echo "HELLO WORLD!!!!"
+fi
+
+echo "------Meanu Options ------"
+echo "2. 'ping 127.0.0.1'"
+echo "Enter a number"
+read n
+
+if [$n -eq 2]; then
+     echo "ping 127.0.0.1"
+fi
+
+echo "------Meanu Options ------"
+echo "3. Print './ipconfig /all'"
+echo "Enter a number"
+read x
+
+if [$x -eq 3]; then
+      echo "./ipconfig /all"
+fi
+
+echo "------Meanu Options ------"
+echo "4. Print 'Exit'"
+echo "Enter a number"
+read g
+
+if [$g -eq 4]; then
+fi

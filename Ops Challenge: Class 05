@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Script Name: Ops Challenge - Class 05
+# Author: Michael Rouson
+# Date of last revision: 9/2/22
+# Purpose: Clearing Logs
+# IMPORTANT - This script should be ran as ROOT not SUDO.
+
+# Declaration of variables
+syslogPath=var/log/syslog
+wtmpPath = var/lop/wtmp
+
+# Declaration of functions
+
+clear_log() {
+    cat $1
+    cat /dev/null > $1
+    cat $1
+}
+
+# Main
+
+clear_log $syslogPath
+clear_log $wtmpPath
+  
+  
+#Print to the screen the content of /var/log/syslog
+cat /var/log/syslog
+#Clear the content of /var/log/syslog
+> /var/log/syslog
+#Print to the content of /var/log/syslog to the screen
+cat /var/log/syslog
+
+
+#Print to the screen the content of /var/log/wtmp
+cat /var/log/wtmp
+#Clear the content of /var/log/wtmp
+> /var/log/wtmp
+#Print to the content of /var/log/wtmp to the screen
+cat /var/log/wtmp
+
+# End

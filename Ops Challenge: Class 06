@@ -1,0 +1,35 @@
+ Script Name: Ops Challenge - Class 06
+# Author: Michael Rouson
+# Date of last revision: 06Sept2022
+# Purpose: Executing a Linux terminal commands from within a Python script.
+
+# Import OS library 
+import os
+
+# Main
+whoami
+ip as
+lshw -short
+
+# Declare Variable 1 
+var1 = 'whoami'
+print(var1)
+
+# Call Variables 1 
+os.system(var1)
+
+# Declare Variable 2 
+var2 = 'ip a'
+print(var2)
+
+# Call Variable 2 
+os. system(var2)
+
+# Declare Variable 3 
+var3 = '1shw -short'
+print(var3) 
+
+# Call Variable 3 
+os. system(var3)
+
+# End 

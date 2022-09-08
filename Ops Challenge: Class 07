@@ -1,0 +1,29 @@
+#!/user/bin/ env python3
+# Script Name: Directory Creation 
+# Author: Michael Rouson
+# Date of last revision: 09SEP2022
+# Purpose: Creating Python scriot that utilizes a function from the "os" library to generate directory information
+
+# Declaration of variables
+
+## Read user input here input using a variable
+fpath = input("Please enter your file path")
+
+# Declaration of functions
+
+## Declare a function here 
+def walkem(fpath):
+    for (root, dirs, files) in os.walk(fpath): 
+        ## Add a print command here to print ==root==
+        print(root)
+        ## Add a print command here to print ==dirs==
+        print(dirs)
+        ## Add a print command here to print ==files==
+        print(files)
+
+# Main
+# fpath - input(" PLease enter your file path")
+walkem(fpath)
+## Pass the variable into the functions here
+
+# End 
